@@ -28,12 +28,12 @@
 	/*common style*/
 	ul{
 		position: absolute;
-		display: block;
+		display: none;
 		text-align: start;
 		width: 40%;
 		background: var(--black);
 		height: 300px;
-		right: -500px;
+		right: 0px;
 		padding: 2rem 3rem;
 		top: 60px;
 		transition: .7s;
