@@ -10,7 +10,9 @@
 <body>
 	<nav class="navbar">
 		<a href="#" class="logo">Glint<b style="color: red;">.</b></a>
-		<ul>
+		<ul><div class="close">
+				<ion-icon class='navClose' name="close"></ion-icon>
+			</div>
 			<li class="navList"><a href="./index.html" class="navLink">Home</a></li>
 			<li class="navList"><a href="./about.html" class="navLink">about</a></li>
 			<li class="navList"><a href="./service.html" class="navLink">services</a></li>
@@ -40,19 +42,30 @@
 			</div>
 		</div>
 	</header>
+	<!-- seprate -->
+	<section class="seprate"></section>
+	<!-- contact -->
 	<section class="section-container contact-container" id="contact">
 
-		<form action="#" class="form">
-			<h2 class="contact-heading">
-			contact us
-		</h2>
+	<h2 class="contact-heading">Get In touch</h2>
+	<p class="para"><ion-icon name="call"></ion-icon> +1   545 334 6454</p>
+	<p class="para"><ion-icon name="mail"></ion-icon> glint@gmail.com</p>
+
+	<form action="#" class="form">
+		<div class="form-responsive">
+		<div>
 			<input required maxlength="20" minlength="5" placeholder="fullname" type="text" class="form-control">
 			<br>
 			<input required maxlength="20" minlength="10" placeholder="example@user.xyz" type="text" class="form-control">
 			<br>
-			<textarea required maxlength="200" minlength="5" placeholder="Type here Message ..." class="textarea" name="" id="msg" cols="30" rows="7"></textarea><br><br>
-			<button class="btn">send message</button>
-		</form>
+			<input required maxlength="20" minlength="10" placeholder="+1   434 343 2323" type="number" class="form-control">
+		</div>
+		<div>
+		<textarea required maxlength="200" minlength="5" placeholder="Type here Message ..." class="textarea" name="" id="msg" cols="30" rows="7"></textarea>
+		</div>
+		</div>
+		<button class="btn">send message</button>
+	</form>
 	</section>
 	<!-- footer -->
 	<footer class="footer">

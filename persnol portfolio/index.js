@@ -1,6 +1,10 @@
 const list = document.querySelector("ul");
-const bars = document.querySelector('.bars');
+const open = document.querySelector('.bars');
+const close = document.querySelector('.navClose')
 
-bars.addEventListener("click",()=>{
+open.addEventListener("click",()=>{
+	list.classList.toggle('show-list');
+})
+close.addEventListener("click",()=>{
 	list.classList.toggle('show-list');
 })

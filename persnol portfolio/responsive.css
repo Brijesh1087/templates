@@ -4,6 +4,24 @@
 	--green: #16a085;
 	--grey: #95a5a6;
 }
+@media only screen and (max-width: 800px){
+	.form-responsive{
+		display: block;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+		padding: 4rem 0;
+		gap: 0;
+		width: 100%;
+
+	}
+	.form-responsive>div{
+	text-align: center!important;
+	padding: 0!important;
+	margin: auto!important;
+	width: 100%;
+	}
+}
 @media only screen and (max-width: 700px){
 	html{
 		font-size: 56%;
@@ -12,6 +30,7 @@
 	display: block;
 	margin: 2rem auto;
 }
+
 
 }
 @media only screen and (max-width: 600px){
@@ -32,11 +51,12 @@
 		text-align: start;
 		width: 40%;
 		background: var(--black);
-		height: 300px;
+		height: auto;
 		right: 0px;
 		padding: 2rem 3rem;
-		top: 60px;
+		top: 3rem;
 		transition: .7s;
+		z-index: 1000;
 	}
 	.navList{
 		display: block;
@@ -55,6 +75,16 @@
 	.show-list{
 		display: block;
 		right: 0;
+	}
+	.close{
+		text-align: end;
+		color: var(--white);
+		font-size: 5rem;
+		display: block;
+		transition: .5s;
+		}
+	.close:hover{
+		color: red;
 	}
 	/*headner*/
 	.header .grid-two{
@@ -126,16 +156,20 @@
 	}
 	/*contact*/
 	.section-container.contact-container{
-		padding:6rem 1rem;
+		padding:6rem 0rem;
 
-	}
-	.form{
-		padding: 0;
 	}
 	.form-control{
-
 		margin: 1rem auto;
-		padding: 5px;
+		/*padding: 5px;*/
 		width: 80%;
 	}
+form.form{
+	padding: 0!important;
+}
+.form-responsive>div *{
+	width: 60%;
+}
+	
+
 }
